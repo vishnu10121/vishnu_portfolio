@@ -9,9 +9,7 @@
   <script src="Chatbot.js"></script>
   <style>
     /* ===== HOME PAGE SPECIFIC ===== */
-    body { overflow: hidden; }
-
-    @media (max-width: 768px) { body { overflow-y: auto; } }
+    body { overflow-y: auto; overflow-x: hidden; }
 
     /* Background Grid */
     body::before {
@@ -27,11 +25,12 @@
 
     section {
       width: 100%;
-      height: calc(100vh - var(--nav-h));
       display: flex;
       align-items: center;
       position: relative;
       z-index: 1;
+      padding: 60px 0;
+      min-height: auto;
     }
 
     .hero {
@@ -232,11 +231,11 @@
       .hero-image-wrap { width: 280px; height: 280px; }
     }
     @media (max-width: 768px) {
-      section { height: auto; padding: 40px 0 60px; }
+      section { padding: 40px 20px 60px; }
       .hero {
         flex-direction: column-reverse;
         text-align: center;
-        padding: 0 20px;
+        padding: 0;
         gap: 32px;
       }
       .hero-content { max-width: 100%; }
