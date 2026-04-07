@@ -221,7 +221,6 @@
 
 <div class="page-wrap">
   <div class="page-header">
-    <div class="tag">// my work</div>
     <h1>My <span>Projects</span></h1>
   </div>
 
@@ -229,17 +228,17 @@
     <button class="filter-btn active" data-cat="all" onclick="filterProjects('all')">
       <i class="fa-solid fa-border-all"></i> All <span class="count-badge" id="cnt-all">7</span>
     </button>
-    <button class="filter-btn" data-cat="web" onclick="filterProjects('web')">
-      <i class="fa-solid fa-globe"></i> Web Dev
-    </button>
     <button class="filter-btn" data-cat="ml" onclick="filterProjects('ml')">
-      <i class="fa-solid fa-brain"></i> ML / AI
+      <i class="fa-solid fa-brain"></i> ML / AI 
     </button>
     <button class="filter-btn" data-cat="data" onclick="filterProjects('data')">
       <i class="fa-solid fa-chart-bar"></i> Data Analysis
     </button>
     <button class="filter-btn" data-cat="fullstack" onclick="filterProjects('fullstack')">
       <i class="fa-solid fa-layer-group"></i> Full Stack
+    </button>
+    <button class="filter-btn" data-cat="uiux" onclick="filterProjects('uiux')">
+      <i class="fa-solid fa-pen-ruler"></i> UI/UX
     </button>
   </div>
 
@@ -287,8 +286,8 @@ const projects = [
     iconLabel:'Raj Gym Tech',
     desc:'A comprehensive full-stack fitness tracking platform featuring workout logging, health metrics tracking, and exercise planning. Built with a modern tech stack for scalability.',
     tech:'Next.js · React · Node.js · Express · MongoDB',
-    tags:['fullstack','web'],
-    cats:['Full Stack','Web Dev'],
+    tags:['fullstack'],
+    cats:['Full Stack'],
     link:'https://github.com/Vishnuraj-1012',
     demo:'#'   // 🔁 Replace with your live URL
   },
@@ -311,8 +310,8 @@ const projects = [
     iconLabel:'flight_new_OG_tag.png',
     desc:'Exploratory data analysis of airline trends, delays, pricing patterns, and route optimization using Python data science libraries.',
     tech:'Python · Pandas · Matplotlib · NumPy · Seaborn',
-    tags:['data','ml'],
-    cats:['Data Analysis','ML/AI'],
+    tags:['ml'],
+    cats:['ML/AI'],
     link:'https://github.com/Vishnuraj-1012',
     demo:'#'
   },
@@ -323,20 +322,20 @@ const projects = [
     iconLabel:'Crypto Prediction',
     desc:'Predicting cryptocurrency price trends using time-series forecasting and machine learning models with historical data analysis.',
     tech:'Python · Scikit-Learn · Pandas · ML',
-    tags:['ml','data'],
-    cats:['ML/AI','Data Analysis'],
+    tags:['ml'],
+    cats:['ML/AI'],
     link:'https://github.com/Vishnuraj-1012',
     demo:'#'
   },
   {
-    title:'Bank Loan Prediction',
+    title:'Bank Loan Prediction DashBoard',
     img:'Bank.jpg',                 // 🔁 Put your own image filename here
     icon:'fa-solid fa-building-columns',
     iconLabel:'Bank Loan Prediction',
     desc:'Classification model to determine loan eligibility based on customer profiles, credit history, and financial indicators.',
     tech:'Python · Scikit-Learn · Pandas · ML',
-    tags:['ml','data'],
-    cats:['ML/AI','Data Analysis'],
+    tags:['data'],
+    cats:['Data Analysis'],
     link:'https://github.com/Vishnuraj-1012',
     demo:'#'
   },
@@ -347,8 +346,8 @@ const projects = [
     iconLabel:'CodeClimb',
     desc:'An interactive platform for developers to practice coding challenges, track progress, and level up their programming skills.',
     tech:'React · CSS · JavaScript',
-    tags:['web','fullstack'],
-    cats:['Web Dev','Full Stack'],
+    tags:['fullstack'],
+    cats:['Full Stack'],
     link:'https://github.com/Vishnuraj-1012',
     demo:'#'
   },
@@ -363,6 +362,18 @@ const projects = [
     cats:['Data Analysis'],
     link:'https://github.com/Vishnuraj-1012',
     demo:'#'
+  },
+  {
+    title:'Fitness UI Design',
+    img:'FIGMA1.png',
+    icon:'fa-solid fa-pen-ruler',
+    iconLabel:'bank UI',
+    desc:'Designed modern VishPay Bank mobile UI using Figma.',
+    tech:'Figma · UI Design',
+    tags:['uiux'],          // IMPORTANT
+    cats:['UI/UX'],         // Display name
+    link:'https://www.figma.com/design/qEBqD7E6WHhp11mOi3vTvJ/Mobile-Banking-App--Community-?node-id=2051-831',
+    demo:'https://www.figma.com/design/qEBqD7E6WHhp11mOi3vTvJ/Mobile-Banking-App--Community-?node-id=2051-831'
   }
 ];
 
